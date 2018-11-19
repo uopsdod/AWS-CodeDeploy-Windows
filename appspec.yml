@@ -1,0 +1,18 @@
+version: 0.0
+os: windows
+files:
+  - source: /
+    destination: c:\temp
+hooks:
+  BeforeInstall:
+    - location: XXX.bat
+    - location: XXX.bat
+  AfterInstall:
+    - location: XXX.bat
+      timeout: 180
+  ApplicationStart:
+    - location: XXX.bat
+      timeout: 3600
+  ValidateService:
+    - location: XXX.bat
+      timeout: 3600
