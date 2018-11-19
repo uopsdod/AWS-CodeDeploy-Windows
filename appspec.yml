@@ -1,18 +1,18 @@
 version: 0.0
 os: windows
 files:
-  - source: /
-    destination: c:\temp
+  - source: \index.html
+    destination: C:\inetpub\wwwroot
 hooks:
   BeforeInstall:
-    - location: XXX.bat
-    - location: XXX.bat
-  AfterInstall:
-    - location: XXX.bat
-      timeout: 180
-  ApplicationStart:
-    - location: XXX.bat
-      timeout: 3600
-  ValidateService:
-    - location: XXX.bat
-      timeout: 3600
+    - location: \before-install.bat
+      timeout: 900
+#  AfterInstall:
+#    - location: XXX.bat
+#      timeout: 180
+#  ApplicationStart:
+#    - location: XXX.bat
+#      timeout: 3600
+#  ValidateService:
+#    - location: XXX.bat
+#      timeout: 3600      

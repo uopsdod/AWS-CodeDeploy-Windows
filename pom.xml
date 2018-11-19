@@ -26,6 +26,8 @@
 <!-- 					<include>buildspec.yml</include> -->
 <!-- 					<include>template.yml</include> -->
 					<include>appspec.yml</include>
+					<include>before-install.bat</include>
+					<include>index.html</include>
 				</includes>
 				<targetPath>./</targetPath>
 				<!-- <excludes> -->
